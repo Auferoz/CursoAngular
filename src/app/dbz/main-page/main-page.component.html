@@ -1,0 +1,11 @@
+<h1>DB</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-characters [characters]="characters"></app-characters>
+    </div>
+    <div class="col">
+        <app-add-characters [new]="new" (onNewCharacter)="addNewCharacter( $event )"></app-add-characters>
+    </div>
+</div>
